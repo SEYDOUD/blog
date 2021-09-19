@@ -1,0 +1,167 @@
+body,html{
+    margin: 0;
+    height: 100%;
+    
+}
+
+.header{
+    background-color: rgb(84, 176, 189);
+    display: flex;
+    align-items: center;
+    height: 170px;
+    position: fixed;
+    
+    width: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.page{
+    display: flex;
+}
+.page aside{
+    margin-left: auto;
+    width: 250px;
+    flex: none;
+    background-color: rgb(138, 210, 238);
+    height: 2000px;
+}
+.h{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.page article{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bureau img{
+    height: 250px;
+    width: 500px;
+}
+footer{
+    background-color: rgb(67, 141, 238);
+    margin-top: auto;
+}
+ .lien li{
+    margin: 50px 0px;
+    list-style: none;
+}
+
+.bop{
+    background-color: lightgray;
+    height: 200px;
+    animation: side 20s;
+    
+}
+@keyframes side{
+    0%{
+        background-color: lightgray;
+    }
+    20%{
+        background-color: black;
+    }
+    80%{
+        background-color: lightgray;
+    }
+}
+
+.bop p{
+    text-align: center;
+    margin-top: 100px;
+    color: black;
+    animation: slide 10s;
+}
+@keyframes slide{
+    0%{
+        color: black;
+    }
+    100%{
+        color: blue;
+    }
+}
+.bureau{
+    width: 500px;
+    height: 500px;
+    border: solid;
+    margin: 20px 0px;
+    
+}
+.lien a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    
+}
+.lien a:hover{
+    color: black;
+}
+.back{
+    background-image: url("backround.png");
+    flex: none;
+    background-attachment: fixed;
+    width: 100%;
+    height: 450px;
+}
+.reseau{
+    color: white;
+    margin-left: auto;
+    margin: 0px 10px;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    margin: 10px 5px;
+}
+.logo:hover{
+    transform: scale(1.1);
+    background-color: white;
+    border-radius: 20px;
+    
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin: 0px 10px;
+    
+}
+nav a:hover{
+    font-weight: bold;
+    transform: scale(2);
+}
+nav{
+   margin-left: auto;
+    flex: none;
+    display: block;
+}
+.reseau{
+    margin-top: -130px;
+    font-weight: bold;
+    font-size: 50px;
+    
+}
+.what{
+    opacity: 0.5;
+}
+.what:hover{
+    opacity: 1;
+}
+.reseau a{
+    text-decoration: none;
+    color: white;
+}
+.reseau a:hover{
+    color: black;
+}
+
+@media screen and( max-width:640px){
+    .header{
+        height: 1000px;
+    }
+}
